@@ -211,8 +211,11 @@ This project contains mainly two steps:
    python3 app.py
    ```
 
+<<<<<<< HEAD
 ## Usage
 
+=======
+>>>>>>> 52f405b20d9f714bef9b90e6482acdac5e53cc0c
 **Screen shorts:** <br>
 <img src="readme_assests/1.User connecting their wallet.png" width="400" height="300">
 <img src="readme_assests/2.User Registration.png" width="400" height="300">

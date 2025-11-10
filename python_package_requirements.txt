@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 Flask==2.2.3 
 pymongo==4.3.3 
 gridfs-fuse
+=======
+Flask==2.2.3 
+pymongo==4.3.3 
+gridfs-fuse
+>>>>>>> 52f405b20d9f714bef9b90e6482acdac5e53cc0c
 web3==5.31.3
