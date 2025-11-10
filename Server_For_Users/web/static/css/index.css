@@ -1,0 +1,259 @@
+/* Add a smooth gradient background */
+body {
+  background: linear-gradient(55deg, #3b82f6, #9333ea);
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header Styling */
+.u-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  background: linear-gradient(155deg, rgba(59, 130, 246, 0.8), rgba(147, 51, 234, 0.8));
+  backdrop-filter: blur(15px); /* Subtle blur for the background */
+  z-index: 2;
+}
+
+.u-header .u-sheet-1 {
+  text-align: center;
+  color: white;
+  z-index: 2;
+  animation: fadeInHeader 1s ease-out;
+}
+
+/* Header Text Styling */
+.u-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for header text */
+.u-header h1:hover {
+  transform: scale(1.05);
+}
+
+/* Animation for the header */
+@keyframes fadeInHeader {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Make the section more stylish */
+.u-section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 400px;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.15); /* Glassmorphism effect */
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 70px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.u-sheet-1{
+  padding-top: 30px;
+}
+/* Improve text appearance */
+.u-section-1 .u-text-1 {
+  letter-spacing: 2px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Improve the connect button */
+.u-section-1 .u-btn-1 {
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  background: #ff7e5f;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.u-section-1 .u-btn-1:hover {
+  background: #ff4f3a;
+  transform: scale(1.05);
+}
+.u-text-1 {
+  text-align: center;
+  width: 100%;
+}
+/* Loading overlay styling */
+#loadingDiv {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  text-align: center;
+  padding-top: 20%;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Improve loading spinner */
+#loadingDiv .spinner-border {
+  width: 60px;
+  height: 60px;
+  border-width: 5px;
+}
+
+/* Notification styling */
+#notifyUser {
+  width: fit-content;
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #ff7e5f;
+  color: white;
+  font-weight: bold;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Style for the particles container */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+/* Styling for the transaction feed */
+#transactionFeed {
+  height: 100vh; /* Full height */
+  overflow-y: auto; /* Enable scrolling */
+  border-right: 2px solid #fff; /* White border to separate */
+}
+
+/* Transaction List */
+#transactionList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#transactionList .list-group-item {
+  font-size: 14px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+}
+
+#transactionList .list-group-item strong {
+  color: #ffcc00; /* Highlight important text */
+}
+
+#transactionList .list-group-item:last-child {
+  border-bottom: none; /* Remove border for last item */
+}
+
+/* Make transaction feed responsive */
+@media (max-width: 768px) {
+  #transactionFeed {
+      height: auto;
+      border-right: none;
+      border-bottom: 2px solid #fff; /* Border at the bottom for mobile */
+  }
+}
+/* === Extra Visual Polish === */
+
+/* Make the glass card pop more like the preview */
+.glass-bg {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+
+/* Modal: frosted-glass look */
+.modal-content.glass-bg {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer styling */
+.u-footer {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.u-footer .btn-link {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.u-footer .btn-link:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+/* Smooth fade-in effect for main content */
+.u-sheet-1.glass-bg {
+  animation: fadeInCard 0.8s ease-in-out;
+}
+
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Transaction Feed list item spacing (for modal) */
+#transactionList .list-group-item {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}

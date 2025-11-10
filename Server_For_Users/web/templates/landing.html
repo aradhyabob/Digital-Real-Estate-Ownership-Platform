@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Real Estate Ownership Platform</title>
+    <link rel="stylesheet" href="css/landing.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Digital Real Estate <br><span>Ownership Platform</span></h1>
+            <p>Experience secure, paperless, blockchain-powered land transactions.</p>
+            
+            <form method="GET" action="/index">
+                <input type="text" name="email_or_mobile" placeholder="Enter email or mobile (optional)">
+                <button type="submit">Get Started</button>
+            </form>
+        </div>
+
+        <div class="right-section">
+            <img id="carousel" src="{{ url_for('static', filename='images/screen1.png') }}" alt="App Screenshot">
+        </div>
+    </div>
+
+    <script>
+        const imagePaths = [
+            "/images/dashboard.png",
+            "/images/property.png",
+            "/images/new_property.png"
+        ];
+
+        let currentImageIndex = 0;
+        const carouselImage = document.getElementById("carousel");
+
+        setInterval(() => {
+            currentImageIndex = (currentImageIndex + 1) % imagePaths.length;
+            carouselImage.src = imagePaths[currentImageIndex];
+        }, 3000); // Change every 3 seconds
+    </script>
+    <section class="accordion-section">
+        <div class="accordion-container">
+            <div class="accordion-item">
+                <button class="accordion-header">👨‍💻 Learn About Us</button>
+                <div class="accordion-content">
+                    <p>
+                        We are a team of tech enthusiasts building secure, paperless digital property platforms.<br>
+                        Our aim is to make land transactions safer, faster, and more transparent using blockchain.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">🔗 What is Blockchain & How To Use It?</button>
+                <div class="accordion-content">
+                    <ul>
+                        <li>✅ Connect your crypto wallet using MetaMask</li>
+                        <li>🔒 One-time Aadhaar verification to ensure identity</li>
+                        <li>📜 Add or transfer land ownership digitally</li>
+                        <li>🧾 Every step is logged immutably on the blockchain</li>
+                        <li>👀 View your land records securely anytime</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+<script>
+    document.querySelectorAll('.accordion-header').forEach(header => {
+        header.addEventListener('click', () => {
+            const content = header.nextElementSibling;
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</html>
