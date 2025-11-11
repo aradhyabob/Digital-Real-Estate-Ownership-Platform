@@ -1,4 +1,4 @@
-# Land Registration System Using Blockchain
+# Digital Real Estate Ownership Platform
 
 ## Table of Contents
 
@@ -12,7 +12,7 @@
 
 # About
 
-The Land Registration System Using Blockchain is a decentralized application (DApp) built on the Ethereum blockchain.
+The Digital Real Estate Ownership Platform is a decentralized application (DApp) built on the Ethereum blockchain.
 It aims to revolutionize the traditional land registration process by leveraging blockchain technology.
 
 ### Drawbacks of the traditional system
